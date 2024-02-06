@@ -1,0 +1,48 @@
+{
+    "include": [ 
+      "resources/ts/**/*.ts",
+      "resources/ts/**/*.d.ts",
+      "resources/ts/**/*.vue",
+      "resources/types/*.d.ts"
+, "resources/ts/app.ts"    ],
+    "exclude": [
+      "dist",
+      "node_modules",
+      "resources/ts/@iconify/*",
+    ],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+          "@/*": ["resources/ts/*"],
+          "@types": ["resources/types/*"],
+          "@images/*": [
+            "resources/images/*"
+          ],
+        },
+        "noEmit": true,
+        "strict": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "jsx": "preserve",
+        "jsxFactory": "h",
+        "jsxFragmentFactory": "Fragment",
+        "target": "esnext",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "isolatedModules": true,
+        "lib": [
+          "esnext",
+          "dom",
+          "dom.iterable",
+          "scripthost"
+        ],
+        "types": [
+          "vite/client",
+          "momentum-layout/macro"
+        ]
+      }
+  }
