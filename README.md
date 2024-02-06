@@ -14,3 +14,6 @@ php artisan optimize
 php aritsan trail:generae
 php artisan serve
 ```
+
+Branches
+develop - stable branch
